@@ -11,13 +11,12 @@ struct MyProfileView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                ProfileCircleImage()
-                
                 Text("My Profile")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Spacer()
                 
+                ProfileCircleImage()
             }
             Spacer()
         }
