@@ -26,6 +26,8 @@ struct HomeView: View {
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10)
                 .padding(40)
+            
+            Spacer()
         }
         .padding()
     }
