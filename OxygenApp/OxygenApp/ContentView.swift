@@ -38,6 +38,11 @@ struct ContentView: View {
                     Text("O2")
                         .font(.subheadline)
                 }
+                Image(information.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .padding(40)
             }
             .padding()
         }
@@ -53,6 +58,7 @@ struct ContentView: View {
                 
                 MapBoard()
                     .frame(height: 300)
+                    .cornerRadius(50)
             }
             .padding()
         }
@@ -67,6 +73,6 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView()
+    ContentViewDefault()
         .modelContainer(for: Item.self, inMemory: true)
 }
