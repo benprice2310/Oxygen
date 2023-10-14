@@ -89,3 +89,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 Presentation/~$Oxygen Presentation.pptx
+
+*.DS_Store
+.DS_Store
+*/.DS_Store
