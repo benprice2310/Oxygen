@@ -20,6 +20,9 @@ struct ContentView: View {
             MapView()
                 .tabItem { Label("Map", systemImage: "map") }
             
+            MyProfileView()
+                .tabItem { Label("Profile", systemImage: "person" )}
+            
             SettingsView()
                 .tabItem { Label("Settings", systemImage: "gear") }
         }
@@ -31,6 +34,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Oxygen")
                     .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 HStack {
                     Text("A breath of fresh air")
                         .font(.subheadline)
@@ -38,6 +42,7 @@ struct ContentView: View {
                     Text("O2")
                         .font(.subheadline)
                 }
+                
                 Image(information.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -53,6 +58,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Jobs Near You")
                     .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Text("Save lives. Make rent.")
                     .font(.subheadline)
                 
@@ -64,15 +70,41 @@ struct ContentView: View {
         }
     }
     
+    
+    struct MyProfileView: View {
+        var body: some View {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("My Profile")
+                        .font(.title)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    
+                    ProfileCircleImage()
+                }
+            }
+            .padding()
+        }
+    }
+    
     struct SettingsView: View {
         var body: some View {
-            Text("Settings")
+            VStack(alignment: .leading) {
+                Text("Settings")
+                    .font(.title)
+                HStack {
+                    Text("Change what you want")
+                        .font(.subheadline)
+                    Spacer()
+                }
+            }
+            .padding()
         }
     }
 }
 
 
 #Preview {
-    ContentViewDefault()
+    ContentView()
         .modelContainer(for: Item.self, inMemory: true)
 }

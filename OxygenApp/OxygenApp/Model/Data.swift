@@ -14,7 +14,7 @@ struct Info {
 
 
 let information = Info(
-    image: "/Users/benprice/dev/Oxygen/OxygenApp/OxygenApp/Assets.xcassets/ImageSet00.imageset/36DDA4C6-2F7D-40F1-A9F4-901156D6B110_1_105_c.jpeg",
+    image: "ocean",
     name: "My Name",
     story: "A story can be about anything you can dream up. There are no right answers, there is no one else.\n\nNeed some inspiration?\n• 🐶🐱🛶️🎭🎤🎧🎸\n• 🏄‍♀️🚵‍♀️🚴‍♀️⛵️🥾🏂⛷📚\n• ✍️🥖☕️🏋️‍♂️🚲🧗‍♀️ ",
     hobbies: ["bicycle", "ticket.fill", "book.fill"],
