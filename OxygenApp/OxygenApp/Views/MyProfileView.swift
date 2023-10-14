@@ -9,7 +9,19 @@ import SwiftUI
 
 struct MyProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            HStack {
+                ProfileCircleImage()
+                
+                Text("My Profile")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Spacer()
+                
+            }
+            Spacer()
+        }
+        .padding()
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 
-struct MapBoard: View {
+struct MapView: View {
     var body: some View {
         Map(initialPosition: .region(region))
     }
@@ -25,5 +25,5 @@ struct MapBoard: View {
 
 
 #Preview {
-    MapBoard()
+    MapView()
 }

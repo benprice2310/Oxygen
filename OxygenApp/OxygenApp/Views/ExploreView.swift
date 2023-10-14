@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ExploreView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Jobs Near You")
+                .font(.title)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            Text("Save lives. Make rent.")
+                .font(.subheadline)
+            
+            MapView()
+                .frame(height: 300)
+                .cornerRadius(20)
+            Spacer()
+        }
+        .padding()
     }
 }
 

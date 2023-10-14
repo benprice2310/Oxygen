@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		932C7D142ADB136A0012B317 /* MapBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D132ADB136A0012B317 /* MapBoard.swift */; };
+		932C7D142ADB136A0012B317 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D132ADB136A0012B317 /* MapView.swift */; };
 		932C7D182ADB13C10012B317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D172ADB13C10012B317 /* ContentView.swift */; };
 		932C7D1A2ADB1A740012B317 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D192ADB1A740012B317 /* Data.swift */; };
 		932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D252ADB39950012B317 /* ProfileCircleImage.swift */; };
 		932C7D2B2ADB3FF60012B317 /* dummydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 932C7D2A2ADB3FF60012B317 /* dummydata.json */; };
+		932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D2C2ADB40950012B317 /* ExploreView.swift */; };
+		932C7D2F2ADB41490012B317 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D2E2ADB41490012B317 /* MyProfileView.swift */; };
+		932C7D312ADB42370012B317 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D302ADB42370012B317 /* SettingsView.swift */; };
+		932C7D332ADB42980012B317 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D322ADB42980012B317 /* HomeView.swift */; };
 		939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991542ADB108000782F11 /* OxygenAppApp.swift */; };
 		939991592ADB108000782F11 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991582ADB108000782F11 /* Item.swift */; };
 		9399915B2ADB108100782F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399915A2ADB108100782F11 /* Assets.xcassets */; };
@@ -19,11 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		932C7D132ADB136A0012B317 /* MapBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoard.swift; sourceTree = "<group>"; };
+		932C7D132ADB136A0012B317 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		932C7D172ADB13C10012B317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		932C7D192ADB1A740012B317 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		932C7D252ADB39950012B317 /* ProfileCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCircleImage.swift; sourceTree = "<group>"; };
 		932C7D2A2ADB3FF60012B317 /* dummydata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummydata.json; sourceTree = "<group>"; };
+		932C7D2C2ADB40950012B317 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		932C7D2E2ADB41490012B317 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		932C7D302ADB42370012B317 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		932C7D322ADB42980012B317 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		939991512ADB108000782F11 /* OxygenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxygenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939991542ADB108000782F11 /* OxygenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenAppApp.swift; sourceTree = "<group>"; };
 		939991582ADB108000782F11 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -47,8 +55,12 @@
 			children = (
 				932C7D172ADB13C10012B317 /* ContentView.swift */,
 				932C7D252ADB39950012B317 /* ProfileCircleImage.swift */,
-				932C7D132ADB136A0012B317 /* MapBoard.swift */,
+				932C7D132ADB136A0012B317 /* MapView.swift */,
 				939991582ADB108000782F11 /* Item.swift */,
+				932C7D2C2ADB40950012B317 /* ExploreView.swift */,
+				932C7D2E2ADB41490012B317 /* MyProfileView.swift */,
+				932C7D302ADB42370012B317 /* SettingsView.swift */,
+				932C7D322ADB42980012B317 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932C7D2F2ADB41490012B317 /* MyProfileView.swift in Sources */,
+				932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */,
 				932C7D1A2ADB1A740012B317 /* Data.swift in Sources */,
+				932C7D332ADB42980012B317 /* HomeView.swift in Sources */,
+				932C7D312ADB42370012B317 /* SettingsView.swift in Sources */,
 				932C7D182ADB13C10012B317 /* ContentView.swift in Sources */,
-				932C7D142ADB136A0012B317 /* MapBoard.swift in Sources */,
+				932C7D142ADB136A0012B317 /* MapView.swift in Sources */,
 				939991592ADB108000782F11 /* Item.swift in Sources */,
 				939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */,
 				932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */,

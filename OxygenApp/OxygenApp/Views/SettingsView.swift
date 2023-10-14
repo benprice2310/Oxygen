@@ -9,7 +9,18 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Settings")
+                .font(.title)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            HStack {
+                Text("Change what you want")
+                    .font(.subheadline)
+                Spacer()
+            }
+            Spacer()
+        }
+        .padding()
     }
 }
 

@@ -11,11 +11,10 @@ struct ProfileCircleImage: View {
     var body: some View {
         Image("profile_picture")
             .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 96, height: 96, alignment: .center)
+            .frame(width: 70, height: 70, alignment: .topLeading)
             .clipShape(Circle())
             .overlay{
-                Circle().stroke(.white, lineWidth: 3)
+                Circle().stroke(.white, lineWidth: 2)
             }
             .shadow(radius: 7)
     }
