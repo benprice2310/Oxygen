@@ -53,7 +53,9 @@
         {
             "organization_id": "uwschool",
             "organization": "University of Washington School of Nursing",
-            "courses": ["Bachelors of Science in Nursing", "Pediatric Clinical Nurse Specialist"],
+            "courses": {
+                "names" : ["Bachelors of Science in Nursing", "Pediatric Clinical Nurse Specialist"]
+            },
             "address": "University of Washington Seattle, WA 98195",
             "coordinates": {
                 "lat": "47.6507",
@@ -82,7 +84,9 @@
         {
             "organization_id": "spuhealth",
             "organization": "Seattle Pacific University School of Health Sciences",
-            "courses": ["Bachelor of Science in Health Sciences", "Master of Science in Clinical Psychology", "Doctor of Nursing Practice"],
+            "courses": {
+                "names": ["Bachelor of Science in Health Sciences", "Master of Science in Clinical Psychology", "Doctor of Nursing Practice"]
+            },
             "address": "3307 3rd Ave W, Seattle, WA 98119",
             "coordinates": {
                 "lat": "47.649",
