@@ -153,9 +153,9 @@
 		939991532ADB108000782F11 /* OxygenApp */ = {
 			isa = PBXGroup;
 			children = (
+				939991542ADB108000782F11 /* OxygenAppApp.swift */,
 				930776192ADBAAE80075F60E /* Depricated */,
 				932C7D292ADB3FC00012B317 /* Model */,
-				939991542ADB108000782F11 /* OxygenAppApp.swift */,
 				932C7D282ADB3F930012B317 /* Resources */,
 				932C7D272ADB3F8A0012B317 /* Views */,
 				9399915A2ADB108100782F11 /* Assets.xcassets */,

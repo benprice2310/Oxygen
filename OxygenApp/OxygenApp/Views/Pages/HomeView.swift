@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    let jobData: Root = JSONParser.load("dummy_job_data.json")
+    
     var body: some View {
+        
         VStack(alignment: .leading) {
             Text("Oxygen")
                 .font(.title)
@@ -26,6 +29,9 @@ struct HomeView: View {
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10)
                 .padding(40)
+            
+            
+            JobCardDeck(jobs: jobData.jobs)
             
             Spacer()
         }
