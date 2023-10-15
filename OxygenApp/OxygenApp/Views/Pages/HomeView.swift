@@ -32,11 +32,6 @@ struct HomeView: View {
 //                .padding(40)
             
             Spacer()
-            
-            JobCardDeck()
-                .padding(.horizontal, -20)
-            
-            Spacer()
         }
         .padding()
     }

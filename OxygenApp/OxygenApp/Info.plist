@@ -9,5 +9,28 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+    
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>680240714109634</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>A680240714109634</string>
+    <key>FacebookClientToken</key>
+    <string>23cb587edb11c36cdfe816ddcf5eab6d</string>
+    <key>FacebookDisplayName</key>
+    <string>Oxygen</string>
+
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+    </array>
+    
 </dict>
 </plist>

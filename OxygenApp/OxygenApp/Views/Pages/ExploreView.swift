@@ -8,23 +8,32 @@
 import SwiftUI
 
 struct ExploreView: View {
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Jobs Near You")
-                .font(.title)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            Text("Save lives. Make rent.")
-                .font(.subheadline)
-            
-            MapView()
-                .frame(height: 300)
-                .cornerRadius(20)
-            Spacer()
-        }
-        .padding()
+            VStack(alignment: .leading) {
+                Text("Jobs Near You")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("Save lives. Make rent.")
+                    .font(.subheadline)
+                
+                MapView()
+                    .frame(height: 240)
+                    .cornerRadius(20)
+                
+//                ExploreFilterBarView()
+//                    .padding(.top, 2)
+                
+                JobCardDeck()
+                    .padding(.top, -10)
+                    .padding(.horizontal, -20)
+            }
+            .padding()
     }
 }
 
-#Preview {
-    ExploreView()
+struct ExploreView_Previews: PreviewProvider {
+    static var previews: some View {
+        ExploreView()
+    }
 }

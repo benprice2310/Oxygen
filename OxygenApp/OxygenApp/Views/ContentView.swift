@@ -21,7 +21,7 @@ struct ContentView: View {
                 .tabItem { Label("Explore", systemImage: "figure.hiking") }
             
             MyProfileView()
-                .tabItem { Label("Profile", systemImage: "person" )}
+                .tabItem { Label("Profile", systemImage: "person") }
         }
     }
 }

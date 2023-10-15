@@ -23,7 +23,9 @@
 		932C7D372ADB4B850012B317 /* JobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D362ADB4B850012B317 /* JobListing.swift */; };
 		932C7D392ADB4D5C0012B317 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D382ADB4D5C0012B317 /* Landmark.swift */; };
 		932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3A2ADB4E240012B317 /* JobModelData.swift */; };
-		939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991542ADB108000782F11 /* OxygenAppApp.swift */; };
+		937448EB2ADC130400B89E99 /* OxygenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991542ADB108000782F11 /* OxygenAppApp.swift */; };
+		937448F12ADC182300B89E99 /* ExploreFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937448F02ADC182300B89E99 /* ExploreFilterBarView.swift */; };
+		937448F32ADC2CD900B89E99 /* JobDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937448F22ADC2CD900B89E99 /* JobDetailsView.swift */; };
 		939991592ADB108000782F11 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991582ADB108000782F11 /* Item.swift */; };
 		9399915B2ADB108100782F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399915A2ADB108100782F11 /* Assets.xcassets */; };
 		9399915E2ADB108100782F11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399915D2ADB108100782F11 /* Preview Assets.xcassets */; };
@@ -47,6 +49,9 @@
 		932C7D362ADB4B850012B317 /* JobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListing.swift; sourceTree = "<group>"; };
 		932C7D382ADB4D5C0012B317 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		932C7D3A2ADB4E240012B317 /* JobModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModelData.swift; sourceTree = "<group>"; };
+		937448DB2ADC0E7F00B89E99 /* OxygenApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OxygenApp.entitlements; sourceTree = "<group>"; };
+		937448F02ADC182300B89E99 /* ExploreFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreFilterBarView.swift; sourceTree = "<group>"; };
+		937448F22ADC2CD900B89E99 /* JobDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsView.swift; sourceTree = "<group>"; };
 		939991512ADB108000782F11 /* OxygenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxygenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939991542ADB108000782F11 /* OxygenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenAppApp.swift; sourceTree = "<group>"; };
 		939991582ADB108000782F11 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 				9307761C2ADBAC260075F60E /* JobCardView.swift */,
 				9307761E2ADBAC440075F60E /* JobCardDeck.swift */,
 				930776322ADBC8B10075F60E /* MapView.swift */,
+				937448F02ADC182300B89E99 /* ExploreFilterBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 				932C7D2C2ADB40950012B317 /* ExploreView.swift */,
 				932C7D2E2ADB41490012B317 /* MyProfileView.swift */,
 				932C7D302ADB42370012B317 /* SettingsView.swift */,
+				937448F22ADC2CD900B89E99 /* JobDetailsView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -145,8 +152,9 @@
 		939991532ADB108000782F11 /* OxygenApp */ = {
 			isa = PBXGroup;
 			children = (
-				939991542ADB108000782F11 /* OxygenAppApp.swift */,
+				937448DB2ADC0E7F00B89E99 /* OxygenApp.entitlements */,
 				9307762B2ADBBEBE0075F60E /* Info.plist */,
+				939991542ADB108000782F11 /* OxygenAppApp.swift */,
 				9307762F2ADBC2D20075F60E /* Managers */,
 				932C7D292ADB3FC00012B317 /* Model */,
 				932C7D282ADB3F930012B317 /* Resources */,
@@ -181,6 +189,8 @@
 			dependencies = (
 			);
 			name = OxygenApp;
+			packageProductDependencies = (
+			);
 			productName = OxygenApp;
 			productReference = 939991512ADB108000782F11 /* OxygenApp.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +219,8 @@
 				Base,
 			);
 			mainGroup = 939991482ADB108000782F11;
+			packageReferences = (
+			);
 			productRefGroup = 939991522ADB108000782F11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,14 +252,16 @@
 				9307761F2ADBAC440075F60E /* JobCardDeck.swift in Sources */,
 				932C7D2F2ADB41490012B317 /* MyProfileView.swift in Sources */,
 				932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */,
+				937448F32ADC2CD900B89E99 /* JobDetailsView.swift in Sources */,
 				932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */,
 				932C7D372ADB4B850012B317 /* JobListing.swift in Sources */,
 				932C7D332ADB42980012B317 /* HomeView.swift in Sources */,
 				932C7D312ADB42370012B317 /* SettingsView.swift in Sources */,
 				932C7D182ADB13C10012B317 /* ContentView.swift in Sources */,
 				939991592ADB108000782F11 /* Item.swift in Sources */,
+				937448EB2ADC130400B89E99 /* OxygenAppApp.swift in Sources */,
 				930776392ADBD89C0075F60E /* JSONParser.swift in Sources */,
-				939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */,
+				937448F12ADC182300B89E99 /* ExploreFilterBarView.swift in Sources */,
 				9307761D2ADBAC260075F60E /* JobCardView.swift in Sources */,
 				932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */,
 				930776332ADBC8B10075F60E /* MapView.swift in Sources */,
@@ -383,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OxygenApp/OxygenApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OxygenApp/Preview Content\"";
@@ -414,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OxygenApp/OxygenApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OxygenApp/Preview Content\"";
