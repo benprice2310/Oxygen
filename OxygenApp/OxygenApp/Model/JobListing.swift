@@ -5,6 +5,13 @@
 //  Created by Benjamin Price on 10/14/23.
 //
 
+//
+//  JobListing.swift
+//  OxygenApp
+//
+//  Created by Benjamin Price on 10/14/23.
+//
+
 import Foundation
 import SwiftUI
 import CoreLocation
@@ -19,7 +26,6 @@ struct JobListing: Hashable, Codable {
     var pay: Array<String> // TODO: decide how to handle this, maybe new object
     var certification: String // TODO: would like to make certification objects for uniformity
     var address: String
-    var landmark: Landmark
     
     private var imageName: String
     var image: Image {

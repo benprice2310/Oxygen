@@ -19,6 +19,8 @@
 		932C7D372ADB4B850012B317 /* JobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D362ADB4B850012B317 /* JobListing.swift */; };
 		932C7D392ADB4D5C0012B317 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D382ADB4D5C0012B317 /* Landmark.swift */; };
 		932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3A2ADB4E240012B317 /* JobModelData.swift */; };
+		932C7D3D2ADB57820012B317 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3C2ADB57820012B317 /* CourseListing.swift */; };
+		932C7D3F2ADB5B2B0012B317 /* JobListingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3E2ADB5B2B0012B317 /* JobListingRow.swift */; };
 		939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991542ADB108000782F11 /* OxygenAppApp.swift */; };
 		939991592ADB108000782F11 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991582ADB108000782F11 /* Item.swift */; };
 		9399915B2ADB108100782F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399915A2ADB108100782F11 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		932C7D362ADB4B850012B317 /* JobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListing.swift; sourceTree = "<group>"; };
 		932C7D382ADB4D5C0012B317 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		932C7D3A2ADB4E240012B317 /* JobModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModelData.swift; sourceTree = "<group>"; };
+		932C7D3C2ADB57820012B317 /* CourseListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
+		932C7D3E2ADB5B2B0012B317 /* JobListingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListingRow.swift; sourceTree = "<group>"; };
 		939991512ADB108000782F11 /* OxygenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxygenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939991542ADB108000782F11 /* OxygenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenAppApp.swift; sourceTree = "<group>"; };
 		939991582ADB108000782F11 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				932C7D192ADB1A740012B317 /* Data.swift */,
 				932C7D382ADB4D5C0012B317 /* Landmark.swift */,
 				932C7D362ADB4B850012B317 /* JobListing.swift */,
+				932C7D3C2ADB57820012B317 /* CourseListing.swift */,
 				932C7D3A2ADB4E240012B317 /* JobModelData.swift */,
 			);
 			path = Model;
@@ -91,6 +96,7 @@
 				932C7D252ADB39950012B317 /* ProfileCircleImage.swift */,
 				932C7D132ADB136A0012B317 /* MapView.swift */,
 				939991582ADB108000782F11 /* Item.swift */,
+				932C7D3E2ADB5B2B0012B317 /* JobListingRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 				932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */,
 				932C7D372ADB4B850012B317 /* JobListing.swift in Sources */,
 				932C7D1A2ADB1A740012B317 /* Data.swift in Sources */,
+				932C7D3D2ADB57820012B317 /* CourseListing.swift in Sources */,
 				932C7D332ADB42980012B317 /* HomeView.swift in Sources */,
 				932C7D312ADB42370012B317 /* SettingsView.swift in Sources */,
 				932C7D182ADB13C10012B317 /* ContentView.swift in Sources */,
@@ -226,6 +233,7 @@
 				939991592ADB108000782F11 /* Item.swift in Sources */,
 				939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */,
 				932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */,
+				932C7D3F2ADB5B2B0012B317 /* JobListingRow.swift in Sources */,
 				932C7D392ADB4D5C0012B317 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
