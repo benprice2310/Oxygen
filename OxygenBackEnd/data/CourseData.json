@@ -1,0 +1,76 @@
+[
+    {
+        "organization_id": "uwschool",
+        "organization": "University of Washington School of Nursing",
+        "courses": ["Bachelors of Science in Nursing", "Pediatric Clinical Nurse Specialist"],
+        "address": "University of Washington Seattle, WA 98195",
+        "coordinates": {
+            "lat": "47.6507",
+            "long": "-122.3084"
+        },
+        "urls": {
+            "Website": "https://nursing.uw.edu",
+            "Degree Programs": "https://nursing.uw.edu/programs/degree-programs-tracks/"
+        }
+    },
+    {
+        "organization_id": "americanhealthcare236",
+        "organization": "American Healthcare CNA Training School",
+        "courses": {
+            "names": ["Certified Nursing Assistant Certification"]
+        },
+        "address": "6951 Martin Luther King Jr Way S, Suite 201\nSeattle, WA 98118",
+        "coordinates": {
+            "lat": "47.539190",
+            "long": "-122.283240"
+        },
+        "urls": {
+            "Website": "https://nurseassistwa.com"
+        }
+    },
+    {
+        "organization_id": "spuhealth",
+        "organization": "Seattle Pacific University School of Health Sciences",
+        "courses": ["Bachelor of Science in Health Sciences", "Master of Science in Clinical Psychology", "Doctor of Nursing Practice"],
+        "address": "3307 3rd Ave W, Seattle, WA 98119",
+        "coordinates": {
+            "lat": "47.649",
+            "long": "-122.3615"
+        },
+        "urls": {
+            "Website": "https://spu.edu",
+            "Degree Programs": "https://spu.edu/academics/school-of-health-sciences"
+        }
+    },
+    {
+        "organization_id": "seattlecentralmed",
+        "organization": "Seattle Central College Medical Program",
+        "courses": {
+            "names": ["Pharmacy Technician Certification", "Medical Billing and Coding", "Surgical Technology"]
+        },
+        "address": "1701 Broadway, Seattle, WA 98122",
+        "coordinates": {
+            "lat": "47.6171",
+            "long": "-122.3215"
+        },
+        "urls": {
+            "Website": "https://seattlecentral.edu"
+        }
+    },
+    {
+        "organization_id": "tacomahealthinstitute",
+        "organization": "Tacoma Health Institute",
+        "courses": {
+            "names": ["Massage Therapy Program", "Physical Therapy Assistant", "Nutritional Sciences"]
+        },
+        "address": "4500 Steilacoom Blvd SW, Lakewood, WA 98499",
+        "coordinates": {
+            "lat": "47.1645",
+            "long": "-122.5115"
+        },
+        "urls": {
+            "Website": "https://thi.edu",
+            "Programs": "https://thi.edu/programs"
+        }
+    }
+]
