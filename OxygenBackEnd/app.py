@@ -10,30 +10,42 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 def getJobNodes():
     data = request.form
 
-    # fake distance checker
-    if (data['latitude'] < "45" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+    try:
+        # fake distance checker
+        if (data['latitude'] < 45 and data['latitude'] > 40) and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+            return jsonify(getData['jobs'])
+        else:
+            return jsonify([])
 
-        with open('data/JobData.json', 'r') as file:
-            data = json.load(file)
+    except:
+        return jsonify(getData())
 
-        return jsonify(data)
-    else:
-        return jsonify([])
 
 
 @app.route("/getCourseNodes", methods = ['POST'])
 def getCourseNodes():
     data = request.form
 
-    # fake distance checker
-    if (data['latitude'] < "45" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+    try:
+        # fake distance checker
+        if (data['latitude'] < "45" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+            return jsonify(getData['courses'])
+        else:
+            return jsonify([])
+    except:
+        return jsonify(getData())
 
-        with open('data/CourseData.json', 'r') as file:
-            data = json.load(file)
 
-        return jsonify(data)
-    else:
-        return jsonify([])
+def getData(keyThing=""):
+    with open('data/AllData.json', 'r') as file:
+        data = json.load(file)
+
+    if keyThing != "":
+        return data[keyThing]
+
+    return data
+
+
 
 
 if __name__ == '__main__':
