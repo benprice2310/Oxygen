@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 
-struct MapView: View {
+struct MapView_01: View {
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
@@ -25,18 +25,14 @@ struct MapView: View {
         .onAppear {
             // You can add any additional setup here if needed
         }
-        .mapControls {
-            MapUserLocationButton()
-        }
     }
 }
-
-struct MapView_Previews: PreviewProvider {
+struct MapView_01_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView_01()
     }
 }
 
 #Preview {
-    MapView()
+    MapView_01()
 }

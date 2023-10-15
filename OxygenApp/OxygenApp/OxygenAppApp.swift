@@ -10,7 +10,10 @@ import SwiftData
 
 @main
 struct OxygenAppApp: App {
+    @StateObject private var locationManager = LocationManager()
+
     var sharedModelContainer: ModelContainer = {
+
         let schema = Schema([
             Item.self,
         ])
@@ -26,6 +29,9 @@ struct OxygenAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear() {
+                    locationManager.requestPermission()
+                }
         }
         .modelContainer(sharedModelContainer)
     }
