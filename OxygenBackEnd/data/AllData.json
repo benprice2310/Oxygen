@@ -3,7 +3,10 @@
         {
             "organization_id": "uwschool",
             "organization": "University of Washington School of Nursing",
-            "courses": ["Bachelors of Science in Nursing", "Pediatric Clinical Nurse Specialist"],
+            "courses": [
+                "Bachelors of Science in Nursing",
+                "Pediatric Clinical Nurse Specialist"
+            ],
             "address": "University of Washington Seattle, WA 98195",
             "coordinates": {
                 "lat": "47.6507",
@@ -18,7 +21,9 @@
             "organization_id": "americanhealthcare236",
             "organization": "American Healthcare CNA Training School",
             "courses": {
-                "names": ["Certified Nursing Assistant Certification"]
+                "names": [
+                    "Certified Nursing Assistant Certification"
+                ]
             },
             "address": "6951 Martin Luther King Jr Way S, Suite 201\nSeattle, WA 98118",
             "coordinates": {
@@ -32,7 +37,11 @@
         {
             "organization_id": "spuhealth",
             "organization": "Seattle Pacific University School of Health Sciences",
-            "courses": ["Bachelor of Science in Health Sciences", "Master of Science in Clinical Psychology", "Doctor of Nursing Practice"],
+            "courses": [
+                "Bachelor of Science in Health Sciences",
+                "Master of Science in Clinical Psychology",
+                "Doctor of Nursing Practice"
+            ],
             "address": "3307 3rd Ave W, Seattle, WA 98119",
             "coordinates": {
                 "lat": "47.649",
@@ -47,7 +56,11 @@
             "organization_id": "seattlecentralmed",
             "organization": "Seattle Central College Medical Program",
             "courses": {
-                "names": ["Pharmacy Technician Certification", "Medical Billing and Coding", "Surgical Technology"]
+                "names": [
+                    "Pharmacy Technician Certification",
+                    "Medical Billing and Coding",
+                    "Surgical Technology"
+                ]
             },
             "address": "1701 Broadway, Seattle, WA 98122",
             "coordinates": {
@@ -62,7 +75,11 @@
             "organization_id": "tacomahealthinstitute",
             "organization": "Tacoma Health Institute",
             "courses": {
-                "names": ["Massage Therapy Program", "Physical Therapy Assistant", "Nutritional Sciences"]
+                "names": [
+                    "Massage Therapy Program",
+                    "Physical Therapy Assistant",
+                    "Nutritional Sciences"
+                ]
             },
             "address": "4500 Steilacoom Blvd SW, Lakewood, WA 98499",
             "coordinates": {
@@ -73,55 +90,225 @@
                 "Website": "https://thi.edu",
                 "Programs": "https://thi.edu/programs"
             }
+        },
+        {
+            "organization_id": "pugetsoundmedacademy",
+            "organization": "Puget Sound Medical Academy",
+            "courses": [
+                "Radiologic Technology",
+                "Medical Laboratory Technician",
+                "Occupational Therapy Assistant"
+            ],
+            "address": "2021 Soundview Drive, Seattle, WA 98144",
+            "coordinates": {
+                "lat": "47.6002",
+                "long": "-122.2958"
+            },
+            "urls": {
+                "Website": "https://psma.edu",
+                "Degree Programs": "https://psma.edu/programs"
+            }
+        },
+        {
+            "organization_id": "seattlebiotechinstitute",
+            "organization": "Seattle Biotech Institute",
+            "courses": {
+                "names": [
+                    "Biotechnology Technician",
+                    "Molecular Biology Specialist",
+                    "Clinical Research Coordinator"
+                ]
+            },
+            "address": "450 Pacific Avenue, Seattle, WA 98109",
+            "coordinates": {
+                "lat": "47.6289",
+                "long": "-122.3461"
+            },
+            "urls": {
+                "Website": "https://sbti.edu"
+            }
+        },
+        {
+            "organization_id": "evergreenwellnessschool",
+            "organization": "Evergreen Wellness School",
+            "courses": [
+                "Holistic Nutrition",
+                "Herbal Medicine",
+                "Yoga Teacher Training"
+            ],
+            "address": "1222 Evergreen Lane, Seattle, WA 98121",
+            "coordinates": {
+                "lat": "47.6142",
+                "long": "-122.3471"
+            },
+            "urls": {
+                "Website": "https://evergreenwellness.edu",
+                "Programs": "https://evergreenwellness.edu/programs"
+            }
         }
     ],
-
-    "jobs": [{
-        "listing_id": "Pbjs3coJkV",
-        "organization": "Swedish Hospital",
-        "organization_id": "swedishhospital69",
-        "job_title": "Certified Nurse Assistant",
-        "description": "About Swedish Hospital: \n Swedish Hospital is a leading healthcare provider committed to delivering world-class patient care in a compassionate environment. Our dedicated team of professionals strives for excellence every day, and we take pride in creating a nurturing workspace for our employees. \n Position Overview: \n We are seeking motivated individuals to join our team as entry-level Certified Nurse Assistants (CNA). This position offers a unique opportunity for individuals looking to start a rewarding career in healthcare without prior experience. \n Key Responsibilities: \n Assist registered nurses and other healthcare professionals in providing basic patient care. \n Monitor and record vital signs including temperature, blood pressure, pulse, and respiratory rate. \n Assist patients with activities of daily living, including bathing, dressing, grooming, and toileting. \n Communicate effectively with patients, families, and staff to ensure a smooth care process. \n Adhere to safety and infection control protocols. \n Maintain a clean and organized work environment. \n Qualifications: \n Valid CNA certification or completion of a state-approved CNA training program. \n Strong interpersonal and communication skills. \n Compassionate and empathetic demeanor. \n Physical stamina to perform the duties of the position. \n Ability to work in a fast-paced environment. \n Benefits: \n Competitive salary and benefits package. \n Comprehensive training and onboarding program. \n Opportunities for professional growth and advancement. \n Supportive work environment. \n\nSwedish Hospital is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",
-        "diversity_badge": true,
-        "hours": ["Full-Time", "Part-Time"],
-        "pay": ["hourly", 25, 40],
-        "certification": "Certified Nursing Assistant Certification",
-        "address": "747 Broadway,\nSeattle, WA 98122",
-        "coordinates": {
-            "lat": "47.609379",
-            "long": "-122.320892"
-        }
-    },
-    {
-        "listing_id": "Rgt4fplLmB",
-        "organization": "Blossom Care Clinic",
-        "organization_id": "blossomcareclinic",
-        "job_title": "Medical Receptionist",
-        "description": "About Blossom Care Clinic: \n Our clinic is focused on providing top-notch care for families and individuals. We emphasize preventive care and holistic treatments. Join our team to contribute to our mission of providing comprehensive medical care. \n Position Overview: \n We're looking for a friendly and organized Medical Receptionist. No prior experience is required, as we provide thorough training. \n Key Responsibilities: \n Greet and check in patients. \n Schedule appointments and manage calendars for providers. \n Answer phone calls and handle inquiries. \n Process billing and insurance claims. \n Ensure the reception area is tidy and welcoming. \n Qualifications: \n High school diploma or equivalent. \n Strong communication skills. \n Proficient in basic computer applications. \n Ability to multitask in a busy environment. \n Benefits: \n Attractive salary and benefits. \n Regular training sessions. \n Opportunities for internal promotions. \n A friendly and supportive team. \n\nBlossom Care Clinic is an equal opportunity employer. We value diversity and ensure our workplace is inclusive for everyone.",
-        "diversity_badge": true,
-        "hours": ["Full-Time"],
-        "pay": ["hourly", 25],
-        "certification": "None",
-        "address": "1234 Maple Street,\nSeattle, WA 98111",
-        "coordinates": {
-            "lat": "47.612345",
-            "long": "-122.323456"
-        }
-    },
-    {
-        "listing_id": "Hklt7spOzQ",
-        "organization": "Dental Bright",
-        "organization_id": "dentalbright",
-        "job_title": "Dental Hygienist",
-        "description": "About DentalBright: \n DentalBright is a modern dental clinic focused on brightening smiles across the city. With state-of-the-art equipment and a patient-first approach, we're looking for professionals passionate about oral care. \n Position Overview: \n Join our dental team as a Dental Hygienist. This role requires individuals dedicated to ensuring patients have clean and healthy teeth. \n Key Responsibilities: \n Conduct initial dental assessments. \n Clean and scale teeth, and apply sealants and fluorides. \n Educate patients about oral hygiene. \n Assist dentists during procedures when necessary. \n Stay updated with the latest in dental hygiene. \n Qualifications: \n Valid Dental Hygienist license. \n Detail-oriented and patient-focused mindset. \n Strong interpersonal skills. \n Ability to work well with a team. \n Benefits: \n Competitive pay and bonuses. \n Health insurance and dental coverage. \n Opportunities to attend dental conventions. \n Positive and friendly work environment. \n\nDentalBright is an equal opportunity employer. We encourage individuals of all backgrounds to apply.",
-        "diversity_badge": true,
-        "hours": ["Part-Time"],
-        "pay": ["hourly", 28, 50],
-        "certification": "Dental Hygienist License",
-        "address": "5678 Elm Road,\nSeattle, WA 98133",
-        "coordinates": {
-            "lat": "47.614567",
-            "long": "-122.326789"
-        }
-    }]
+    "jobs": [
+        {
+            "listing_id": "Pbjs3coJkV",
+            "organization": "Swedish Hospital",
+            "organization_id": "swedishhospital69",
+            "job_title": "Certified Nurse Assistant",
+            "description": "About Swedish Hospital: \n Swedish Hospital is a leading healthcare provider committed to delivering world-class patient care in a compassionate environment. Our dedicated team of professionals strives for excellence every day, and we take pride in creating a nurturing workspace for our employees. \n Position Overview: \n We are seeking motivated individuals to join our team as entry-level Certified Nurse Assistants (CNA). This position offers a unique opportunity for individuals looking to start a rewarding career in healthcare without prior experience. \n Key Responsibilities: \n Assist registered nurses and other healthcare professionals in providing basic patient care. \n Monitor and record vital signs including temperature, blood pressure, pulse, and respiratory rate. \n Assist patients with activities of daily living, including bathing, dressing, grooming, and toileting. \n Communicate effectively with patients, families, and staff to ensure a smooth care process. \n Adhere to safety and infection control protocols. \n Maintain a clean and organized work environment. \n Qualifications: \n Valid CNA certification or completion of a state-approved CNA training program. \n Strong interpersonal and communication skills. \n Compassionate and empathetic demeanor. \n Physical stamina to perform the duties of the position. \n Ability to work in a fast-paced environment. \n Benefits: \n Competitive salary and benefits package. \n Comprehensive training and onboarding program. \n Opportunities for professional growth and advancement. \n Supportive work environment. \n\nSwedish Hospital is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.",
+            "diversity_badge": true,
+            "hours": [
+                "Full-Time",
+                "Part-Time"
+            ],
+            "pay": [
+                "hourly",
+                25,
+                40
+            ],
+            "certification": "Certified Nursing Assistant Certification",
+            "address": "747 Broadway,\nSeattle, WA 98122",
+            "coordinates": {
+                "lat": "47.609379",
+                "long": "-122.320892"
+            }
+        },
+        {
+            "listing_id": "Rgt4fplLmB",
+            "organization": "Blossom Care Clinic",
+            "organization_id": "blossomcareclinic",
+            "job_title": "Medical Receptionist",
+            "description": "About Blossom Care Clinic: \n Our clinic is focused on providing top-notch care for families and individuals. We emphasize preventive care and holistic treatments. Join our team to contribute to our mission of providing comprehensive medical care. \n Position Overview: \n We're looking for a friendly and organized Medical Receptionist. No prior experience is required, as we provide thorough training. \n Key Responsibilities: \n Greet and check in patients. \n Schedule appointments and manage calendars for providers. \n Answer phone calls and handle inquiries. \n Process billing and insurance claims. \n Ensure the reception area is tidy and welcoming. \n Qualifications: \n High school diploma or equivalent. \n Strong communication skills. \n Proficient in basic computer applications. \n Ability to multitask in a busy environment. \n Benefits: \n Attractive salary and benefits. \n Regular training sessions. \n Opportunities for internal promotions. \n A friendly and supportive team. \n\nBlossom Care Clinic is an equal opportunity employer. We value diversity and ensure our workplace is inclusive for everyone.",
+            "diversity_badge": true,
+            "hours": [
+                "Full-Time"
+            ],
+            "pay": [
+                "hourly",
+                25
+            ],
+            "certification": "None",
+            "address": "1234 Maple Street,\nSeattle, WA 98111",
+            "coordinates": {
+                "lat": "47.612345",
+                "long": "-122.323456"
+            }
+        },
+        {
+            "listing_id": "Hklt7spOzQ",
+            "organization": "Dental Bright",
+            "organization_id": "dentalbright",
+            "job_title": "Dental Hygienist",
+            "description": "About DentalBright: \n DentalBright is a modern dental clinic focused on brightening smiles across the city. With state-of-the-art equipment and a patient-first approach, we're looking for professionals passionate about oral care. \n Position Overview: \n Join our dental team as a Dental Hygienist. This role requires individuals dedicated to ensuring patients have clean and healthy teeth. \n Key Responsibilities: \n Conduct initial dental assessments. \n Clean and scale teeth, and apply sealants and fluorides. \n Educate patients about oral hygiene. \n Assist dentists during procedures when necessary. \n Stay updated with the latest in dental hygiene. \n Qualifications: \n Valid Dental Hygienist license. \n Detail-oriented and patient-focused mindset. \n Strong interpersonal skills. \n Ability to work well with a team. \n Benefits: \n Competitive pay and bonuses. \n Health insurance and dental coverage. \n Opportunities to attend dental conventions. \n Positive and friendly work environment. \n\nDentalBright is an equal opportunity employer. We encourage individuals of all backgrounds to apply.",
+            "diversity_badge": true,
+            "hours": [
+                "Part-Time"
+            ],
+            "pay": [
+                "hourly",
+                28,
+                50
+            ],
+            "certification": "Dental Hygienist License",
+            "address": "5678 Elm Road,\nSeattle, WA 98133",
+            "coordinates": {
+                "lat": "47.614567",
+                "long": "-122.326789"
+            }
+        },
+        {
+            "listing_id": "Jk4s7doLpP",
+            "organization": "Harborview Medical Center",
+            "organization_id": "harborviewmc",
+            "job_title": "Radiologic Technologist",
+            "description": "About Harborview Medical Center: \n Harborview is a renowned medical center in Seattle dedicated to providing the best care to its patients. We are looking for a Radiologic Technologist to join our imaging team. \n Key Responsibilities: \n Operate imaging equipment, ensure patient safety, assist radiologists. \n Benefits: \n Competitive salary, health benefits, and opportunities for advancement.",
+            "diversity_badge": true,
+            "hours": ["Full-Time"],
+            "pay": ["hourly", 30, 45],
+            "certification": "Radiologic Technology Certification",
+            "address": "325 9th Ave, Seattle, WA 98104",
+            "coordinates": {
+              "lat": "47.6041",
+              "long": "-122.3231"
+            }
+          },
+          {
+            "listing_id": "Pm3c6ftKwZ",
+            "organization": "Pine Wellness Clinic",
+            "organization_id": "pinewellness",
+            "job_title": "Clinical Dietitian",
+            "description": "About Pine Wellness Clinic: \n A holistic health center focused on integrative care. We're seeking a Clinical Dietitian to provide nutrition counseling. \n Key Responsibilities: \n Assess patients' nutrition needs, develop meal plans, educate patients. \n Benefits: \n Competitive salary, ongoing training, and a supportive work environment.",
+            "diversity_badge": true,
+            "hours": ["Part-Time"],
+            "pay": ["hourly", 28, 40],
+            "certification": "Registered Dietitian Certification",
+            "address": "789 Pine Street, Seattle, WA 98115",
+            "coordinates": {
+              "lat": "47.6254",
+              "long": "-122.3355"
+            }
+          },
+          {
+            "listing_id": "Lz5b8qrNxW",
+            "organization": "Emerald Dental Group",
+            "organization_id": "emeralddental",
+            "job_title": "Dental Assistant",
+            "description": "About Emerald Dental Group: \n A leading dental practice in Seattle. We are hiring a Dental Assistant to support our dentists. \n Key Responsibilities: \n Assist during dental procedures, prepare patients, manage dental instruments. \n Benefits: \n Competitive pay, dental coverage, and a friendly team.",
+            "diversity_badge": true,
+            "hours": ["Full-Time"],
+            "pay": ["hourly", 20, 35],
+            "certification": "Dental Assistant Certification",
+            "address": "234 Emerald Lane, Seattle, WA 98117",
+            "coordinates": {
+              "lat": "47.6876",
+              "long": "-122.3782"
+            }
+          },
+          {
+            "listing_id": "Qk2t6uwXpE",
+            "organization": "Seattle Spine Institute",
+            "organization_id": "seattlespine",
+            "job_title": "Physical Therapist",
+            "description": "About Seattle Spine Institute: \n A leading spinal care center in Seattle. We're seeking a Physical Therapist experienced in musculoskeletal disorders. \n Key Responsibilities: \n Design and implement patient-specific therapy plans, conduct regular evaluations to monitor patient progress, educate patients about therapeutic exercises. \n Benefits: \n Competitive salary, health benefits, and a collaborative work environment.",
+            "diversity_badge": true,
+            "hours": ["Full-Time", "Part-Time"],
+            "pay": ["hourly", 35, 50],
+            "certification": "Licensed Physical Therapist",
+            "address": "456 Spine Street, Seattle, WA 98120",
+            "coordinates": {
+              "lat": "47.6034",
+              "long": "-122.3294"
+            }
+          },
+          {
+            "listing_id": "Mn4c7gyZwA",
+            "organization": "Emerald Eye Clinic",
+            "organization_id": "emeraldeye",
+            "job_title": "Optometric Assistant",
+            "description": "About Emerald Eye Clinic: \n A state-of-the-art eye care facility in Seattle. We are hiring an Optometric Assistant to support our optometrists. \n Key Responsibilities: \n Assist in eye exams, manage patient records, coordinate with optical labs for eyewear orders. \n Benefits: \n Competitive salary, vision benefits, and a supportive team environment.",
+            "diversity_badge": true,
+            "hours": ["Full-Time"],
+            "pay": ["hourly", 18, 25],
+            "certification": "None",
+            "address": "7890 Vision Lane, Seattle, WA 98125",
+            "coordinates": {
+              "lat": "47.6904",
+              "long": "-122.3405"
+            }
+          },
+          {
+            "listing_id": "Zo5d9irNzI",
+            "organization": "Pacific Sound Mental Health",
+            "organization_id": "pacificsoundmh",
+            "job_title": "Clinical Psychologist",
+            "description": "About Pacific Sound Mental Health: \n A dedicated mental health clinic in Seattle. We are looking for a Clinical Psychologist to join our team. \n Key Responsibilities: \n Conduct psychological assessments, provide therapy sessions, collaborate with a multidisciplinary team. \n Benefits: \n Competitive pay, health benefits, and opportunities for continued education.",
+            "diversity_badge": true,
+            "hours": ["Part-Time"],
+            "pay": ["hourly", 45, 70],
+            "certification": "Licensed Clinical Psychologist",
+            "address": "1234 Soundview Drive, Seattle, WA 98130",
+            "coordinates": {
+              "lat": "47.6215",
+              "long": "-122.3556"
+            }
+          }
+    ]
 }

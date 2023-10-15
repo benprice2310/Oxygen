@@ -12,14 +12,18 @@ def getJobNodes():
     data = request.form
 
     try:
+        if len(data['latitude']) == 0 and len(data['longitude']) == 0:
+            return jsonify(getData())
+
         # fake distance checker
         if (data['latitude'] < "50" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
-            return jsonify(getData['jobs'])
+            return jsonify(getData('jobs'))
         else:
             return jsonify([])
 
     except:
-        return jsonify(getData())
+        None
+    return jsonify(getData())
 
 
 
@@ -28,14 +32,17 @@ def getCourseNodes():
     data = request.form
 
     try:
-        assert data['latitude'] != "" and data['longitude'] != ""
+        if len(data['latitude']) == 0 and len(data['longitude']) == 0:
+            return jsonify(getData())
+
         # fake distance checker
         if (data['latitude'] < "50" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
-            return jsonify(getData['courses'])
+            return jsonify(getData('courses'))
         else:
             return jsonify([])
     except:
         return jsonify(getData())
+
 
 
 def getData(keyThing=""):
