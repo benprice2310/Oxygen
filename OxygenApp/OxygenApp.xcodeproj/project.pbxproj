@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9307761D2ADBAC260075F60E /* JobCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307761C2ADBAC260075F60E /* JobCardView.swift */; };
 		9307761F2ADBAC440075F60E /* JobCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307761E2ADBAC440075F60E /* JobCardDeck.swift */; };
-		930776212ADBAC660075F60E /* JSONParser_Combined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776202ADBAC660075F60E /* JSONParser_Combined.swift */; };
 		930776312ADBC3030075F60E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776302ADBC3030075F60E /* LocationManager.swift */; };
 		930776332ADBC8B10075F60E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776322ADBC8B10075F60E /* MapView.swift */; };
 		930776372ADBD7F80075F60E /* dummy_job_data02.json in Resources */ = {isa = PBXBuildFile; fileRef = 930776362ADBD7F80075F60E /* dummy_job_data02.json */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		9307761C2ADBAC260075F60E /* JobCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardView.swift; sourceTree = "<group>"; };
 		9307761E2ADBAC440075F60E /* JobCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardDeck.swift; sourceTree = "<group>"; };
-		930776202ADBAC660075F60E /* JSONParser_Combined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser_Combined.swift; sourceTree = "<group>"; };
 		9307762B2ADBBEBE0075F60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		930776302ADBC3030075F60E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		930776322ADBC8B10075F60E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				932C7D382ADB4D5C0012B317 /* Landmark.swift */,
 				932C7D362ADB4B850012B317 /* JobListing.swift */,
 				932C7D3A2ADB4E240012B317 /* JobModelData.swift */,
-				930776202ADBAC660075F60E /* JSONParser_Combined.swift */,
 				930776382ADBD89C0075F60E /* JSONParser.swift */,
 			);
 			path = Model;
@@ -240,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930776212ADBAC660075F60E /* JSONParser_Combined.swift in Sources */,
 				9307761F2ADBAC440075F60E /* JobCardDeck.swift in Sources */,
 				932C7D2F2ADB41490012B317 /* MyProfileView.swift in Sources */,
 				932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */,

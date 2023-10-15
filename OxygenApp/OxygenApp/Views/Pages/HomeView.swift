@@ -14,25 +14,27 @@ struct HomeView: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            Text("Oxygen")
-                .font(.title)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             HStack {
-                Text("A breath of fresh air")
-                    .font(.subheadline)
+                Text("Oxygen")
+                    .font(.title)
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Spacer()
                 Text("O2")
                     .font(.subheadline)
             }
+            Text("A breath of fresh air")
+                .font(.subheadline)
             
-            Image("ocean")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .cornerRadius(10)
-                .padding(40)
+//            Image("ocean")
+//                .resizable()
+//                .aspectRatio(contentMode: .fit)
+//                .cornerRadius(10)
+//                .padding(40)
             
+            Spacer()
             
             JobCardDeck()
+                .padding(.horizontal, -20)
             
             Spacer()
         }
