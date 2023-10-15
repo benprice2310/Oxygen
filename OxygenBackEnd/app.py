@@ -16,9 +16,9 @@ def getJobNodes():
         with open('data/JobData.json', 'r') as file:
             data = json.load(file)
 
-        return data
+        return jsonify(data)
     else:
-        return []
+        return jsonify([])
 
 
 @app.route("/getCourseNodes", methods = ['POST'])
@@ -31,9 +31,9 @@ def getCourseNodes():
         with open('data/CourseData.json', 'r') as file:
             data = json.load(file)
 
-        return data
+        return jsonify(data)
     else:
-        return []
+        return jsonify([])
 
 
 if __name__ == '__main__':
