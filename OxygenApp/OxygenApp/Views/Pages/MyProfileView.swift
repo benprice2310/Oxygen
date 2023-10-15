@@ -16,8 +16,8 @@ struct MyProfileView: View {
     private let certifications: [String] = ["CPR", "First Aid", "AED", "EMT Basic", "RN", "CSW", "BLS"]
     
     var body: some View {
-        ScrollView{
-            VStack {
+        NavigationView {
+            ScrollView {
                 HStack {
                     Text("My Profile")
                         .font(.largeTitle)
@@ -43,6 +43,7 @@ struct MyProfileView: View {
                         .padding(.top)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
+                        
                         HStack {
                             ForEach(certifications, id: \.self) { cert in
                                 Text(cert)
@@ -64,6 +65,7 @@ struct MyProfileView: View {
                                 .padding()
                                 .background(Color.blue)
                                 .cornerRadius(8)
+                                
                             }
                         }
                     }
@@ -88,22 +90,21 @@ struct MyProfileView: View {
                     .background(Color.blue)
                     .cornerRadius(8)
                     
-                    Button(action: {
-                        // Action to show what employers see
-                    }) {
-                        HStack {
-                            Spacer()
-                            Text("What Employers See")
-                                .foregroundColor(.white)
-                            Spacer()
-                            Image(systemName: "eye")
-                                .foregroundColor(.white)
+                    NavigationLink(destination: JobDetailsView_Preview.previews) {
+                        Button(action: { /* empty action */ }) {
+                            HStack {
+                                Spacer()
+                                Text("What Employers See")
+                                    .foregroundColor(.white)
+                                Spacer()
+                                Image(systemName: "eye")
+                                    .foregroundColor(.white)
+                            }
                         }
+                        .padding()
+                        .background(Color.green)
+                        .cornerRadius(8)
                     }
-                    .padding()
-                    .background(Color.green)
-                    .cornerRadius(8)
-                    
                     ConnectButton(title: "Connect to Facebook", icon: "f.circle.fill", color: .blue)
                     ConnectButton(title: "Connect to Google", icon: "g.circle.fill", color: .red)
                     ConnectButton(title: "Connect to LinkedIn", icon: "l.circle.fill", color: .blue)
@@ -120,8 +121,9 @@ struct MyProfileView: View {
                     }
                 }
             }
-            .padding()
-            .cornerRadius(20)
+            .padding(.horizontal)
+            .navigationTitle("My Profile")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

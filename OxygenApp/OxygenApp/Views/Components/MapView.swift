@@ -36,3 +36,7 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+
+#Preview {
+    MapView()
+}

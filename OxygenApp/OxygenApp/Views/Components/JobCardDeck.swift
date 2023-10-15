@@ -11,17 +11,17 @@ struct JobCardDeck: View {
     @ObservedObject var jobListingData = JobModelData()  // this assumes you have JobModelData class set up properly
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 15) {
-                ForEach(jobListingData.jobListings) { job in
+        NavigationView {
+            List(jobListingData.jobListings) { job in
+                NavigationLink(destination: JobDetailsView(job: job)) {
                     JobCardView(job: job)
-                        .padding(.vertical, 5)
                 }
             }
-            .padding()
+            .navigationBarTitle("Job Listings")
         }
     }
 }
+
 
 struct JobCardDeck_Previews: PreviewProvider {
     static var previews: some View {

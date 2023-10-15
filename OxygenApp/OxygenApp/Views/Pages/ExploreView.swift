@@ -20,15 +20,17 @@ struct ExploreView: View {
                 MapView()
                     .frame(height: 240)
                     .cornerRadius(20)
+                    .padding(.bottom, 10)
                 
-//                ExploreFilterBarView()
-//                    .padding(.top, 2)
+                //                ExploreFilterBarView()
+                //                    .padding(.top, 2)
                 
                 JobCardDeck()
-                    .padding(.top, -10)
-                    .padding(.horizontal, -20)
+//                    .padding(.horizontal, -20)
             }
-            .padding()
+            .padding(.horizontal)
+            .navigationBarTitle("Jobs Near You")
+       
     }
 }
 

@@ -67,7 +67,7 @@ struct JobCardView: View {
         .background(Color.white)
         .cornerRadius(15)
         .shadow(color: Color.black.opacity(0.15), radius: 5, x: 0, y: 5)
-        .padding(.horizontal, 10)
+        .padding(.horizontal)
     }
 }
 

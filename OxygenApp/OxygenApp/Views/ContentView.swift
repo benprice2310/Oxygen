@@ -14,11 +14,12 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            HomeView()
-                .tabItem { Label("Home", systemImage: "house.fill") }
-            
             ExploreView()
                 .tabItem { Label("Explore", systemImage: "figure.hiking") }
+            
+            LearnView()
+                .tabItem { Label("Learn", systemImage: "book")}
+            
             
             MyProfileView()
                 .tabItem { Label("Profile", systemImage: "person") }
