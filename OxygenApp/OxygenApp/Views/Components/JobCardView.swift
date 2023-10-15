@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct JobCard: View {
-    let job: Job
+struct JobCardView: View {
+    let job: JobListing
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -46,13 +46,13 @@ struct JobCard: View {
     }
 }
 
-struct JobCard_Preview: PreviewProvider {
+struct JobCardView_Preview: PreviewProvider {
     static var previews: some View {
-        let sampleJob = Job(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(lat: "47.609379", long: "-122.320892"))
-        JobCard(job: sampleJob)
+        let sampleJob = JobListing(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(lat: "47.609379", long: "-122.320892"))
+        JobCardView(job: sampleJob)
     }
 }
 
 #Preview {
-    JobCard_Preview.previews
+    JobCardView_Preview.previews
 }

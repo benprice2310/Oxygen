@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9307761D2ADBAC260075F60E /* JobCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307761C2ADBAC260075F60E /* JobCard.swift */; };
+		9307761D2ADBAC260075F60E /* JobCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307761C2ADBAC260075F60E /* JobCardView.swift */; };
 		9307761F2ADBAC440075F60E /* JobCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9307761E2ADBAC440075F60E /* JobCardDeck.swift */; };
-		930776212ADBAC660075F60E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776202ADBAC660075F60E /* JSONParser.swift */; };
-		930776232ADBAC840075F60E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776222ADBAC840075F60E /* Model.swift */; };
+		930776212ADBAC660075F60E /* JSONParser_Combined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776202ADBAC660075F60E /* JSONParser_Combined.swift */; };
 		930776312ADBC3030075F60E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776302ADBC3030075F60E /* LocationManager.swift */; };
 		930776332ADBC8B10075F60E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776322ADBC8B10075F60E /* MapView.swift */; };
+		930776372ADBD7F80075F60E /* dummy_job_data02.json in Resources */ = {isa = PBXBuildFile; fileRef = 930776362ADBD7F80075F60E /* dummy_job_data02.json */; };
+		930776392ADBD89C0075F60E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930776382ADBD89C0075F60E /* JSONParser.swift */; };
 		932C7D182ADB13C10012B317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D172ADB13C10012B317 /* ContentView.swift */; };
-		932C7D1A2ADB1A740012B317 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D192ADB1A740012B317 /* TestData.swift */; };
 		932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D252ADB39950012B317 /* ProfileCircleImage.swift */; };
 		932C7D2B2ADB3FF60012B317 /* dummy_job_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 932C7D2A2ADB3FF60012B317 /* dummy_job_data.json */; };
 		932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D2C2ADB40950012B317 /* ExploreView.swift */; };
@@ -24,7 +24,6 @@
 		932C7D372ADB4B850012B317 /* JobListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D362ADB4B850012B317 /* JobListing.swift */; };
 		932C7D392ADB4D5C0012B317 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D382ADB4D5C0012B317 /* Landmark.swift */; };
 		932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3A2ADB4E240012B317 /* JobModelData.swift */; };
-		932C7D3D2ADB57820012B317 /* CourseListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C7D3C2ADB57820012B317 /* CourseListing.swift */; };
 		939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991542ADB108000782F11 /* OxygenAppApp.swift */; };
 		939991592ADB108000782F11 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939991582ADB108000782F11 /* Item.swift */; };
 		9399915B2ADB108100782F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9399915A2ADB108100782F11 /* Assets.xcassets */; };
@@ -32,19 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9307761A2ADBABE10075F60E /* JobListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JobListingView.swift; path = OxygenApp/Views/Components/JobListingView.swift; sourceTree = SOURCE_ROOT; };
-		9307761C2ADBAC260075F60E /* JobCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCard.swift; sourceTree = "<group>"; };
+		9307761C2ADBAC260075F60E /* JobCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardView.swift; sourceTree = "<group>"; };
 		9307761E2ADBAC440075F60E /* JobCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCardDeck.swift; sourceTree = "<group>"; };
-		930776202ADBAC660075F60E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		930776222ADBAC840075F60E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		930776242ADBAFB00075F60E /* JobListingRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListingRow.swift; sourceTree = "<group>"; };
+		930776202ADBAC660075F60E /* JSONParser_Combined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser_Combined.swift; sourceTree = "<group>"; };
 		9307762B2ADBBEBE0075F60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9307762D2ADBBF430075F60E /* MapView-01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView-01.swift"; sourceTree = "<group>"; };
 		930776302ADBC3030075F60E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		930776322ADBC8B10075F60E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		932C7D132ADB136A0012B317 /* MapView-Basic00.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapView-Basic00.swift"; sourceTree = "<group>"; };
+		930776362ADBD7F80075F60E /* dummy_job_data02.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummy_job_data02.json; sourceTree = "<group>"; };
+		930776382ADBD89C0075F60E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		932C7D172ADB13C10012B317 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		932C7D192ADB1A740012B317 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		932C7D252ADB39950012B317 /* ProfileCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCircleImage.swift; sourceTree = "<group>"; };
 		932C7D2A2ADB3FF60012B317 /* dummy_job_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummy_job_data.json; sourceTree = "<group>"; };
 		932C7D2C2ADB40950012B317 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -54,7 +49,6 @@
 		932C7D362ADB4B850012B317 /* JobListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListing.swift; sourceTree = "<group>"; };
 		932C7D382ADB4D5C0012B317 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		932C7D3A2ADB4E240012B317 /* JobModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModelData.swift; sourceTree = "<group>"; };
-		932C7D3C2ADB57820012B317 /* CourseListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListing.swift; sourceTree = "<group>"; };
 		939991512ADB108000782F11 /* OxygenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxygenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939991542ADB108000782F11 /* OxygenAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenAppApp.swift; sourceTree = "<group>"; };
 		939991582ADB108000782F11 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -73,17 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		930776192ADBAAE80075F60E /* Depricated */ = {
-			isa = PBXGroup;
-			children = (
-				930776242ADBAFB00075F60E /* JobListingRow.swift */,
-				9307761A2ADBABE10075F60E /* JobListingView.swift */,
-				932C7D132ADB136A0012B317 /* MapView-Basic00.swift */,
-				9307762D2ADBBF430075F60E /* MapView-01.swift */,
-			);
-			path = Depricated;
-			sourceTree = "<group>";
-		};
 		9307762F2ADBC2D20075F60E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				932C7D2A2ADB3FF60012B317 /* dummy_job_data.json */,
+				930776362ADBD7F80075F60E /* dummy_job_data02.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -113,13 +97,11 @@
 		932C7D292ADB3FC00012B317 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				932C7D192ADB1A740012B317 /* TestData.swift */,
 				932C7D382ADB4D5C0012B317 /* Landmark.swift */,
 				932C7D362ADB4B850012B317 /* JobListing.swift */,
-				932C7D3C2ADB57820012B317 /* CourseListing.swift */,
 				932C7D3A2ADB4E240012B317 /* JobModelData.swift */,
-				930776202ADBAC660075F60E /* JSONParser.swift */,
-				930776222ADBAC840075F60E /* Model.swift */,
+				930776202ADBAC660075F60E /* JSONParser_Combined.swift */,
+				930776382ADBD89C0075F60E /* JSONParser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,7 +111,7 @@
 			children = (
 				932C7D252ADB39950012B317 /* ProfileCircleImage.swift */,
 				939991582ADB108000782F11 /* Item.swift */,
-				9307761C2ADBAC260075F60E /* JobCard.swift */,
+				9307761C2ADBAC260075F60E /* JobCardView.swift */,
 				9307761E2ADBAC440075F60E /* JobCardDeck.swift */,
 				930776322ADBC8B10075F60E /* MapView.swift */,
 			);
@@ -172,7 +154,6 @@
 				932C7D292ADB3FC00012B317 /* Model */,
 				932C7D282ADB3F930012B317 /* Resources */,
 				932C7D272ADB3F8A0012B317 /* Views */,
-				930776192ADBAAE80075F60E /* Depricated */,
 				9399915A2ADB108100782F11 /* Assets.xcassets */,
 				9399915C2ADB108100782F11 /* Preview Content */,
 			);
@@ -247,6 +228,7 @@
 			files = (
 				9399915E2ADB108100782F11 /* Preview Assets.xcassets in Resources */,
 				9399915B2ADB108100782F11 /* Assets.xcassets in Resources */,
+				930776372ADBD7F80075F60E /* dummy_job_data02.json in Resources */,
 				932C7D2B2ADB3FF60012B317 /* dummy_job_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,21 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930776212ADBAC660075F60E /* JSONParser.swift in Sources */,
+				930776212ADBAC660075F60E /* JSONParser_Combined.swift in Sources */,
 				9307761F2ADBAC440075F60E /* JobCardDeck.swift in Sources */,
 				932C7D2F2ADB41490012B317 /* MyProfileView.swift in Sources */,
 				932C7D3B2ADB4E240012B317 /* JobModelData.swift in Sources */,
 				932C7D2D2ADB40950012B317 /* ExploreView.swift in Sources */,
 				932C7D372ADB4B850012B317 /* JobListing.swift in Sources */,
-				932C7D1A2ADB1A740012B317 /* TestData.swift in Sources */,
-				932C7D3D2ADB57820012B317 /* CourseListing.swift in Sources */,
 				932C7D332ADB42980012B317 /* HomeView.swift in Sources */,
 				932C7D312ADB42370012B317 /* SettingsView.swift in Sources */,
 				932C7D182ADB13C10012B317 /* ContentView.swift in Sources */,
 				939991592ADB108000782F11 /* Item.swift in Sources */,
+				930776392ADBD89C0075F60E /* JSONParser.swift in Sources */,
 				939991552ADB108000782F11 /* OxygenAppApp.swift in Sources */,
-				9307761D2ADBAC260075F60E /* JobCard.swift in Sources */,
-				930776232ADBAC840075F60E /* Model.swift in Sources */,
+				9307761D2ADBAC260075F60E /* JobCardView.swift in Sources */,
 				932C7D262ADB39950012B317 /* ProfileCircleImage.swift in Sources */,
 				930776332ADBC8B10075F60E /* MapView.swift in Sources */,
 				930776312ADBC3030075F60E /* LocationManager.swift in Sources */,

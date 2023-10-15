@@ -8,24 +8,25 @@
 import SwiftUI
 
 struct JobCardDeck: View {
-    let jobs: [Job]
+    @ObservedObject var jobListingData = JobModelData()  // this assumes you have JobModelData class set up properly
     
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                ForEach(jobs, id: \.listing_id) { job in
-                    JobCard(job: job)
+                ForEach(jobListingData.jobListings) { job in
+                    JobCardView(job: job)
                 }
             }
+            .padding()
         }
     }
 }
 
 struct JobCardDeck_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleJob1 = Job(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(lat: "47.609379", long: "-122.320892"))
+        let sampleJob1 = JobListing(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(lat: "47.609379", long: "-122.320892"))
         
-        let sampleJob2 = Job(
+        let sampleJob2 = JobListing(
             listing_id: "A1b2c3D4e5",
             organization_id: "techinnovators123",
             organization: "Tech Innovators Inc.",
@@ -62,7 +63,7 @@ struct JobCardDeck_Previews: PreviewProvider {
             coordinates: Coordinates(lat: "37.404319", long: "-122.074890")
         )
         
-        let sampleJob3 = Job(
+        let sampleJob3 = JobListing(
             listing_id: "Z9y8x7W6v5",
             organization_id: "designmasters456",
             organization: "Design Masters Studio",
@@ -100,9 +101,7 @@ struct JobCardDeck_Previews: PreviewProvider {
             coordinates: Coordinates(lat: "37.773972", long: "-122.431297")
         )
         
-        
-        
-        JobCardDeck(jobs: [sampleJob1, sampleJob2, sampleJob3])
+        JobCardDeck()
     }
 }
 

@@ -5,42 +5,76 @@
 //  Created by Benjamin Price on 10/14/23.
 //
 
-//
-//  JobListing.swift
-//  OxygenApp
-//
-//  Created by Benjamin Price on 10/14/23.
-//
-
 import Foundation
-import SwiftUI
-import CoreLocation
 
-struct JobListing: Hashable, Codable {
-    var listing_id: String
-    var organization_id: String
-    var job_title: String
-    var description: String
-    var diversity_badge: Bool
-    var hours: Array<String>
-    var pay: Array<String> // TODO: decide how to handle this, maybe new object
-    var certification: String // TODO: would like to make certification objects for uniformity
-    var address: String
+struct Root: Codable {
+    let jobs: [JobListing]
+    let courses: [Course]
+}
+
+struct JobListing: Codable, Identifiable {
+    var id: String { listing_id }
+    let listing_id: String
+    let organization_id: String
+    let organization: String
+    let job_title: String
+    let description: String
+    let diversity_badge: Bool
+    let hours: [String]
+    let pay: [PayInfo]
+    let certification: String
+    let address: String
+    let coordinates: Coordinates
+}
+
+enum PayInfo: Codable {
+    case hourly
+    case salary
+    case amount(Int)
     
-    private var imageName: String
-    var image: Image {
-        Image(imageName)
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let stringValue = try? container.decode(String.self) {
+            switch stringValue {
+            case "hourly": self = .hourly
+            case "salary": self = .salary
+            default: throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath, debugDescription: "Data doesn't match any known case"))
+            }
+        } else if let intValue = try? container.decode(Int.self) {
+            self = .amount(intValue)
+        } else {
+            throw DecodingError.dataCorrupted(.init(codingPath: decoder.codingPath, debugDescription: "Data doesn't match any known case"))
+        }
     }
     
-    private var coordinates: Coordinates
-    var locationCoordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(
-            latitude: coordinates.latitude,
-            longitude: coordinates.longitude)
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .hourly:
+            try container.encode("hourly")
+        case .salary:
+            try container.encode("salary")
+        case .amount(let value):
+            try container.encode(value)
+        }
     }
-    
-    struct Coordinates: Hashable, Codable {
-        var latitude: Double
-        var longitude: Double
-    }
+}
+
+
+struct Course: Codable {
+    let organization_id: String
+    let organization: String
+    let courses: Courses
+    let address: String
+    let coordinates: Coordinates
+    let urls: [String: String]
+}
+
+struct Courses: Codable {
+    let names: [String]
+}
+
+struct Coordinates: Codable {
+    let lat: String
+    let long: String
 }

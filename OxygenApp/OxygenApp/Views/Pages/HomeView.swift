@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    let jobData: Root = JSONParser.load("dummy_job_data.json")
+    @ObservedObject var jobData = JobModelData()
+//    let jobData: Root = JSONParser.load("dummy_job_data.json")
     
     var body: some View {
         
@@ -24,14 +25,14 @@ struct HomeView: View {
                     .font(.subheadline)
             }
             
-            Image(information.image)
+            Image("ocean")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(10)
                 .padding(40)
             
             
-            JobCardDeck(jobs: jobData.jobs)
+            JobCardDeck()
             
             Spacer()
         }
