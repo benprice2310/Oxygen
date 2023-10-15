@@ -94,3 +94,9 @@ Presentation/~$Oxygen Presentation.pptx
 .DS_Store
 */.DS_Store
 OxygenBackEnd/__pycache__/app.cpython-311.pyc
+
+*/cert.pem
+*/key.pem
+.DS_Store
+*.tar
+*.tar.gz
