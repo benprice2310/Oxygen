@@ -1,10 +1,11 @@
 import json
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 
 # Init Flask app
 app = Flask(__name__, template_folder='templates', static_folder='static')
-
+CORS(app)
 
 @app.route("/getJobNodes", methods = ['POST'])
 def getJobNodes():
@@ -12,7 +13,7 @@ def getJobNodes():
 
     try:
         # fake distance checker
-        if (data['latitude'] < 45 and data['latitude'] > 40) and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+        if (data['latitude'] < "50" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
             return jsonify(getData['jobs'])
         else:
             return jsonify([])
@@ -27,8 +28,9 @@ def getCourseNodes():
     data = request.form
 
     try:
+        assert data['latitude'] != "" and data['longitude'] != ""
         # fake distance checker
-        if (data['latitude'] < "45" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
+        if (data['latitude'] < "50" and data['latitude'] > "40") and (data['longitude'] > "-120" and data['longitude'] < "-130"):
             return jsonify(getData['courses'])
         else:
             return jsonify([])
@@ -44,8 +46,6 @@ def getData(keyThing=""):
         return data[keyThing]
 
     return data
-
-
 
 
 if __name__ == '__main__':
