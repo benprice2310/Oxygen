@@ -26,7 +26,6 @@ struct ExploreView: View {
                 //                    .padding(.top, 2)
                 
                 JobCardDeck()
-//                    .padding(.horizontal, -20)
             }
             .padding(.horizontal)
             .navigationBarTitle("Jobs Near You")

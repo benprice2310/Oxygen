@@ -73,7 +73,7 @@ struct JobCardView: View {
 
 struct JobCardView_Preview: PreviewProvider {
     static var previews: some View {
-        let sampleJob = JobListing(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(lat: "47.609379", long: "-122.320892"))
+        let sampleJob = JobListing(listing_id: "Pbjs3coJkV", organization_id: "swedishhospital69", organization: "Swedish Hospital", job_title: "Certified Nurse Assistant", description: "About Swedish Hospital: Swedish Hospital is a leading...", diversity_badge: true, hours: ["Full-Time", "Part-Time"], pay: [.hourly, .amount(25)], certification: "Certified Nursing Assistant Certification", address: "747 Broadway, Seattle, WA 98122", coordinates: Coordinates(latitude: "47.609379", longitude: "-122.320892"))
         JobCardView(job: sampleJob)
     }
 }

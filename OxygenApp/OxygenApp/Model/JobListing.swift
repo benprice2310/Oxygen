@@ -75,6 +75,6 @@ struct Courses: Codable {
 }
 
 struct Coordinates: Codable {
-    let lat: String
-    let long: String
+    let latitude: String
+    let longitude: String
 }
